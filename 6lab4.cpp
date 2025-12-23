@@ -2,15 +2,14 @@
 
 int main(void) {
     char ch;
-    int columns, rows;
-    printf("Enter character, number of columns and number of rows: ");
-    scanf(" %c %d %d", &ch, &columns, &rows);
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < columns; j++) {
+    int count;
+    printf("Enter character and number of times: ");
+    scanf(" %c %d", &ch, &count);
+    for (int i = 0; i < count; i++) {
+        for (int j = 0; j < count; j++) {
             printf("%c", ch);
         }
         printf("\n");
     }
     return 0;
 }
-
